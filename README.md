@@ -12,9 +12,16 @@ Open `/compai` to chat. Your first companion is Armo, a veteran gamer with a dry
 - “Which retainer last had my Grade 8 Dark Matter?” -> Enable retainer access and visit the retainers you want it to remember.
 - “Is Figments of the Shallows in my glamour dresser?” -> Enable dresser access and open your dresser to refresh what CompAI can see.
 
-![A CompAI reply in the FFXIV chat log with a map price and gathering location](images/game-chat-example.png)
+![CompAI’s main chat showing a question about treasure map prices on Raiden and a reply linking to Universalis](images/main-chat.png)
 
 *An example market lookup on Raiden. The prices are from the time of the screenshot.*
+
+<details>
+<summary>See the follow-up in the FFXIV chat log</summary>
+
+![A CompAI reply in the FFXIV chat log with a map price and gathering location](images/game-chat-example.png)
+
+</details>
 
 ## You choose what it reads
 

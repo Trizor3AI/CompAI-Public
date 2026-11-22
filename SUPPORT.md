@@ -17,7 +17,9 @@ Once any unsaved chats are safe, cancel active requests and try disabling and re
 
 ## Report a problem
 
-Use [CompAI’s GitHub issues](https://github.com/Trizor3AI/CompAI-Public/issues). Include these details where you can.
+For bugs, use [CompAI’s GitHub issues](https://github.com/Trizor3AI/CompAI-Public/issues). If you think you’ve found a security or privacy problem, [report it privately](SECURITY.md).
+
+For a bug report, include these details where you can.
 
 - Your CompAI version and whether the problem started after installing or updating. You can find the version at the top of `/compai settings`.
 - What you did, what you expected and what happened instead.

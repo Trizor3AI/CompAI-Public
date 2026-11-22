@@ -1,0 +1,416 @@
+{
+  "Bag": "Inventory1",
+  "Slot": 0,
+  "ItemId": 9611,
+  "CapturedAtUtc": "2000-01-01T00:00:00+00:00",
+  "StatLabels": [
+    "Maximum Speed",
+    "Acceleration",
+    "Endurance",
+    "Stamina",
+    "Cunning"
+  ],
+  "Reason": "A parentage fragment is not to the right of its stat label.",
+  "nodes": [
+    {
+      "NodeId": 2,
+      "X": 3415.4,
+      "Y": 1465.4,
+      "Text": "Breeding Capacity: 1",
+      "Runs": [
+        {
+          "Text": "Breeding Capacity: 1",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 2,
+      "X": 3415.4,
+      "Y": 1440.2001,
+      "Text": "Color: Shale Brown",
+      "Runs": [
+        {
+          "Text": "Color: Shale Brown",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 2,
+      "X": 3415.4,
+      "Y": 1415,
+      "Text": "Ability: Paradigm Shift",
+      "Runs": [
+        {
+          "Text": "Ability: Paradigm Shift",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 2,
+      "X": 3415.4,
+      "Y": 1389.8,
+      "Text": "Grade: 6",
+      "Runs": [
+        {
+          "Text": "Grade: 6",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 98,
+      "X": 3408.2,
+      "Y": 1370.6001,
+      "Text": "Grade",
+      "Runs": [
+        {
+          "Text": "Grade",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 6,
+      "X": 3432.2,
+      "Y": 1629.8,
+      "Text": "\u2642\u2605\u2605\u2605\u2605\u3000\u2640\u2605\u2605\u2605\u2605",
+      "Runs": [
+        {
+          "Text": "\u2642",
+          "Color": 529
+        },
+        {
+          "Text": "\u2605\u2605\u2605",
+          "Color": 530
+        },
+        {
+          "Text": "\u2605",
+          "Color": 529
+        },
+        {
+          "Text": "\u3000",
+          "Color": 0
+        },
+        {
+          "Text": "\u2640",
+          "Color": 531
+        },
+        {
+          "Text": "\u2605\u2605",
+          "Color": 532
+        },
+        {
+          "Text": "\u2605\u2605",
+          "Color": 531
+        }
+      ]
+    },
+    {
+      "NodeId": 5,
+      "X": 3432.2,
+      "Y": 1632.2001,
+      "Text": "Cunning",
+      "Runs": [
+        {
+          "Text": "Cunning",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 6,
+      "X": 3432.2,
+      "Y": 1601,
+      "Text": "\u2642\u2605\u2605\u2605\u2605\u3000\u2640\u2605\u2605\u2605\u2605",
+      "Runs": [
+        {
+          "Text": "\u2642",
+          "Color": 529
+        },
+        {
+          "Text": "\u2605\u2605\u2605",
+          "Color": 530
+        },
+        {
+          "Text": "\u2605",
+          "Color": 529
+        },
+        {
+          "Text": "\u3000",
+          "Color": 0
+        },
+        {
+          "Text": "\u2640",
+          "Color": 531
+        },
+        {
+          "Text": "\u2605\u2605\u2605\u2605",
+          "Color": 531
+        }
+      ]
+    },
+    {
+      "NodeId": 5,
+      "X": 3432.2,
+      "Y": 1603.4,
+      "Text": "Stamina",
+      "Runs": [
+        {
+          "Text": "Stamina",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 6,
+      "X": 3432.2,
+      "Y": 1572.2,
+      "Text": "\u2642\u2605\u2605\u2605\u2605\u3000\u2640\u2605\u2605\u2605\u2605",
+      "Runs": [
+        {
+          "Text": "\u2642",
+          "Color": 529
+        },
+        {
+          "Text": "\u2605\u2605",
+          "Color": 530
+        },
+        {
+          "Text": "\u2605\u2605",
+          "Color": 529
+        },
+        {
+          "Text": "\u3000",
+          "Color": 0
+        },
+        {
+          "Text": "\u2640",
+          "Color": 531
+        },
+        {
+          "Text": "\u2605\u2605\u2605\u2605",
+          "Color": 531
+        }
+      ]
+    },
+    {
+      "NodeId": 5,
+      "X": 3432.2,
+      "Y": 1574.6,
+      "Text": "Endurance",
+      "Runs": [
+        {
+          "Text": "Endurance",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 6,
+      "X": 3432.2,
+      "Y": 1543.4,
+      "Text": "\u2642\u2605\u2605\u2605\u2605\u3000\u2640\u2605\u2605\u2605\u2605",
+      "Runs": [
+        {
+          "Text": "\u2642",
+          "Color": 529
+        },
+        {
+          "Text": "\u2605\u2605",
+          "Color": 530
+        },
+        {
+          "Text": "\u2605\u2605",
+          "Color": 529
+        },
+        {
+          "Text": "\u3000",
+          "Color": 0
+        },
+        {
+          "Text": "\u2640",
+          "Color": 531
+        },
+        {
+          "Text": "\u2605\u2605\u2605\u2605",
+          "Color": 531
+        }
+      ]
+    },
+    {
+      "NodeId": 5,
+      "X": 3432.2,
+      "Y": 1545.8,
+      "Text": "Acceleration",
+      "Runs": [
+        {
+          "Text": "Acceleration",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 6,
+      "X": 3432.2,
+      "Y": 1514.6,
+      "Text": "\u2642\u2605\u2605\u2605\u2605\u3000\u2640\u2605\u2605\u2605\u2605",
+      "Runs": [
+        {
+          "Text": "\u2642",
+          "Color": 529
+        },
+        {
+          "Text": "\u2605\u2605\u2605\u2605",
+          "Color": 529
+        },
+        {
+          "Text": "\u3000",
+          "Color": 0
+        },
+        {
+          "Text": "\u2640",
+          "Color": 531
+        },
+        {
+          "Text": "\u2605\u2605\u2605",
+          "Color": 532
+        },
+        {
+          "Text": "\u2605",
+          "Color": 531
+        }
+      ]
+    },
+    {
+      "NodeId": 5,
+      "X": 3432.2,
+      "Y": 1517,
+      "Text": "Maximum Speed",
+      "Runs": [
+        {
+          "Text": "Maximum Speed",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 94,
+      "X": 3408.2,
+      "Y": 1495.4,
+      "Text": "Pedigree",
+      "Runs": [
+        {
+          "Text": "Pedigree",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 48,
+      "X": 3409.4,
+      "Y": 1729.4,
+      "Text": "Unsellable \u3000Market Prohibited",
+      "Runs": [
+        {
+          "Text": "Unsellable \u3000Market Prohibited",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 44,
+      "X": 3409.4,
+      "Y": 1705.4,
+      "Text": "Shop Selling Price: Special Vendor",
+      "Runs": [
+        {
+          "Text": "Shop Selling Price: Special Vendor",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 42,
+      "X": 3409.4,
+      "Y": 1668.2,
+      "Text": "Official documentation permitting the one-time use of a \r\ngrade 6 female chocobo for breeding purposes.",
+      "Runs": [
+        {
+          "Text": "Official documentation permitting the one-time use of a ",
+          "Color": 0
+        },
+        {
+          "Text": "grade 6 female chocobo for breeding purposes.",
+          "Color": 65535
+        }
+      ]
+    },
+    {
+      "NodeId": 35,
+      "X": 3408.2,
+      "Y": 1340.6,
+      "Text": "Other",
+      "Runs": [
+        {
+          "Text": "Other",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 34,
+      "X": 3669.8,
+      "Y": 1340.6,
+      "Text": "[Patch 2.51]   (Total: 19)",
+      "Runs": [
+        {
+          "Text": "[Patch 2.51]   ",
+          "Color": 3
+        },
+        {
+          "Text": "(Total: 19)",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 33,
+      "X": 3468.2,
+      "Y": 1290.2,
+      "Text": "Covering Permission G6-F",
+      "Runs": [
+        {
+          "Text": "Covering Permission G6-F",
+          "Color": 549
+        }
+      ]
+    },
+    {
+      "NodeId": 23,
+      "X": 3579.8,
+      "Y": 1275.8,
+      "Text": "Untradable",
+      "Runs": [
+        {
+          "Text": "Untradable",
+          "Color": 0
+        }
+      ]
+    },
+    {
+      "NodeId": 2,
+      "X": 3523.4001,
+      "Y": 1754.6,
+      "Text": "Alt Key  Hide item details",
+      "Runs": [
+        {
+          "Text": "Alt Key  Hide item details",
+          "Color": 0
+        }
+      ]
+    }
+  ]
+}

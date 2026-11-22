@@ -1,0 +1,13 @@
+{
+  "codex_version": "codex-cli 0.167.0",
+  "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+  "runtime_files": {
+    "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+    "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+  },
+  "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+  "model": "gpt-6-sol",
+  "source": "codex debug models --bundled (no refresh)",
+  "change": "All visible models: apply_patch_tool_type freeform -> null; hidden models unchanged",
+  "validated_route": "loopback mock only; subscription route pending"
+}

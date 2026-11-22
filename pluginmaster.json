@@ -1,0 +1,27 @@
+[
+  {
+    "Author": "Trizor3",
+    "Name": "CompAI",
+    "InternalName": "CompAI",
+    "AssemblyVersion": "0.53.23.0",
+    "Description": "An AI companion for quest questions, gear ideas, crafting plans, or a chat between adventures. Pick its personality and choose which game details it can see. Open /compai to chat, or /compai settings to get started. Requires a supported AI account.",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "CompAI"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://github.com/Trizor3AI/CompAI-Public/releases/download/v0.53.23.0/icon.png",
+    "Punchline": "Your AI sidekick for adventures, answers, and a little banter.",
+    "AcceptsFeedback": false,
+    "RepoUrl": "https://github.com/Trizor3AI/CompAI-Public",
+    "DownloadLinkInstall": "https://github.com/Trizor3AI/CompAI-Public/releases/download/v0.53.23.0/CompAI-0.53.23.0.zip",
+    "DownloadLinkUpdate": "https://github.com/Trizor3AI/CompAI-Public/releases/download/v0.53.23.0/CompAI-0.53.23.0.zip",
+    "LastUpdate": 1795258494,
+    "IsHide": false,
+    "IsTestingExclusive": false
+  }
+]

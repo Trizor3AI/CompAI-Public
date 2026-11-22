@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/GameContextReading.cs" Link="GameContextReading.cs" />
+    <Compile Include="../../CompAI/GameContextLookup.cs" Link="GameContextLookup.cs" />
+    <Compile Include="../../CompAI/NpcConversationStore.cs" Link="NpcConversationStore.cs" />
+    <Compile Include="../../CompAI/Plugin.GameContext.cs" Link="Plugin.GameContext.cs" />
+    <Compile Include="../../CompAI/CompanionAccessSettings.cs" Link="CompanionAccessSettings.cs" />
+  </ItemGroup>
+</Project>

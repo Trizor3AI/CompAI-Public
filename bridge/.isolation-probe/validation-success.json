@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "validated_at_utc": "2026-11-08T09:32:46.225232+00:00",
+  "route": "loopback mock only; no provider or subscription request",
+  "codex_version": "codex-cli 0.167.0",
+  "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+  "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+  "model": "gpt-6-sol",
+  "runtime_files": {
+    "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+    "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+  },
+  "cases": [
+    {
+      "name": "shell-control",
+      "file": "verified-shell-control.json",
+      "sha256": "a6fbd7469eabc61435e8f93404cffc2bacd17637b3e21197359a81cea8b6fa62",
+      "passed": true
+    },
+    {
+      "name": "text",
+      "file": "verified-text.json",
+      "sha256": "28d30f6caa0655c558f236bdc9b77eff0569e47f02821a4d476de8933ed30a5b",
+      "passed": true
+    },
+    {
+      "name": "snapshot",
+      "file": "verified-snapshot.json",
+      "sha256": "5e34139b4bce25e2bf6a05b7103a8b411d3e7568549a0a0b9f3365daf6f02fb8",
+      "passed": true
+    },
+    {
+      "name": "deny-command",
+      "file": "verified-deny-command.json",
+      "sha256": "f21863a5653a7ba33cf25beee91521268cdbf63c145fbfbe390792485cc36d0b",
+      "passed": true
+    },
+    {
+      "name": "deny-patch",
+      "file": "verified-deny-patch.json",
+      "sha256": "8c72f804659fc8da831e65b893fb5fd3b3d9371c541aadaec3dd0d2f8e3c1f65",
+      "passed": true
+    },
+    {
+      "name": "inspect",
+      "file": "verified-inspect.json",
+      "sha256": "c46e00cffb68359fbd378eb15951cf5086370330c199fe55594de167e4cac06c",
+      "passed": true
+    },
+    {
+      "name": "mcp-resources",
+      "file": "verified-mcp-resources.json",
+      "sha256": "71f415bdb28c71da1bba1c2f6907afc17c575fc59d639c7d0fed966af9f664ab",
+      "passed": true
+    },
+    {
+      "name": "mcp-inherited-server",
+      "file": "verified-mcp-inherited-server.json",
+      "sha256": "9ef0cba12dc8432a280ad260fb7c3efa6be5837047cd6a822635e6c2ee3761a2",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "policy_id": "empty_mcp_resources_v1"
+}

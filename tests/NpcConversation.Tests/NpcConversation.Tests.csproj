@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RestoreSources></RestoreSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/GameContextReading.cs" Link="GameContextReading.cs" />
+    <Compile Include="../../CompAI/NpcConversationStore.cs" Link="NpcConversationStore.cs" />
+    <Compile Include="../../CompAI/NpcDialogueTextCache.cs" Link="NpcDialogueTextCache.cs" />
+  </ItemGroup>
+</Project>

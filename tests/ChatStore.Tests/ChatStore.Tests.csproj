@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/PerformanceDiagnostics.cs" Link="PerformanceDiagnostics.cs" />
+    <Compile Include="../../CompAI/ChatStore.cs" Link="ChatStore.cs" />
+    <Compile Include="../../CompAI/PersonalityPresets.cs" Link="PersonalityPresets.cs" />
+    <Compile Include="../../CompAI/PersonalityDetailsLookup.cs" Link="PersonalityDetailsLookup.cs" />
+    <Compile Include="../../CompAI/ChatHistory.cs" Link="ChatHistory.cs" />
+    <Compile Include="../../CompAI/ChatHistoryLookup.cs" Link="ChatHistoryLookup.cs" />
+    <Compile Include="../../CompAI/CompanionModelSettings.cs" Link="CompanionModelSettings.cs" />
+    <Compile Include="../../CompAI/AnswerLinks.cs" Link="AnswerLinks.cs" />
+    <Compile Include="../../CompAI/MapLocationLink.cs" Link="MapLocationLink.cs" />
+  </ItemGroup>
+</Project>

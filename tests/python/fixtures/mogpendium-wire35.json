@@ -1,0 +1,245 @@
+[
+  {
+    "name": "available_1",
+    "arguments": {
+      "category": "mogpendium_weekly"
+    },
+    "result": {
+      "scope": "observed_activities",
+      "category": "mogpendium_weekly",
+      "captured_at_utc": "2026-10-20T12:00:00.0000000+00:00",
+      "available": true,
+      "unavailable_reason": null,
+      "coverage": "Only the selected Weekly objective detail and displayed rewards are observed. Other objectives and weeks are not covered; the public candidate pool is not a personal assignment list. Selected event and category are corroborated by the visible heading, currency labels and category description. Completion, reward claims, selected week and event timing are unknown. Stale or off-screen list widgets are excluded. Observations can become stale. No game menu is opened, server data requested or game state changed.",
+      "source": "Owned visible MoogleCollection detail pane; localized CSBonusSeason, CSBonusMission, CSBonusContent and related public definitions",
+      "readiness": "visible_menu_observation",
+      "entry_count": 7,
+      "entries": [
+        {
+          "id": 1,
+          "group": "event",
+          "name": "Selected event",
+          "state": "observed",
+          "text": "Moogle Treasure Trove The First Hunt for Astronomy",
+          "value": 28,
+          "required": null,
+          "unit": "season",
+          "reference_id": null,
+          "reference_kind": null,
+          "slot": null
+        },
+        {
+          "id": 2,
+          "group": "event",
+          "name": "Selected category",
+          "state": "observed",
+          "text": "Weekly Objectives",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": null,
+          "reference_kind": null,
+          "slot": null
+        },
+        {
+          "id": 3,
+          "group": "coverage",
+          "name": "Unknown state",
+          "state": "observed",
+          "text": "Completion, reward claims, selected week and event timing are unknown. Rewards are displayed previews, not ownership.",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": null,
+          "reference_kind": null,
+          "slot": null
+        },
+        {
+          "id": 4,
+          "group": "event",
+          "name": "Reward currency",
+          "state": "observed",
+          "text": "Irregular Tomestone of Astronomy I",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": 51750,
+          "reference_kind": "item",
+          "slot": null
+        },
+        {
+          "id": 5,
+          "group": "event",
+          "name": "Secondary reward currency",
+          "state": "observed",
+          "text": "Uolon Horn Token",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": 51752,
+          "reference_kind": "item",
+          "slot": null
+        },
+        {
+          "id": 10,
+          "group": "selection",
+          "name": "The Gilded Araya",
+          "state": "observed",
+          "text": "Complete the Gilded Araya.",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": 301,
+          "reference_kind": "cs_bonus_content",
+          "slot": null
+        },
+        {
+          "id": 11,
+          "group": "selection",
+          "name": "Displayed reward",
+          "state": "observed",
+          "text": null,
+          "value": 20,
+          "required": null,
+          "unit": "items",
+          "reference_id": 51750,
+          "reference_kind": "item",
+          "slot": null
+        }
+      ],
+      "matched_count": 7,
+      "offset": 0,
+      "limit": 50,
+      "next_offset": null,
+      "truncated": false
+    }
+  },
+  {
+    "name": "available_2",
+    "arguments": {
+      "category": "mogpendium_minimog"
+    },
+    "result": {
+      "scope": "observed_activities",
+      "category": "mogpendium_minimog",
+      "captured_at_utc": "2026-10-20T12:00:00.0000000+00:00",
+      "available": true,
+      "unavailable_reason": null,
+      "coverage": "Only the selected Minimog challenge detail and displayed rewards are observed. Other objectives and weeks are not covered; the public candidate pool is not a personal assignment list. Selected event and category are corroborated by the visible heading, currency labels and category description. Completion, reward claims, selected week and event timing are unknown. Stale or off-screen list widgets are excluded. Observations can become stale. No game menu is opened, server data requested or game state changed.",
+      "source": "Owned visible MoogleCollection detail pane; localized CSBonusSeason, CSBonusMission, CSBonusContent and related public definitions",
+      "readiness": "visible_menu_observation",
+      "entry_count": 8,
+      "entries": [
+        {
+          "id": 1,
+          "group": "event",
+          "name": "Selected event",
+          "state": "observed",
+          "text": "Moogle Treasure Trove The First Hunt for Astronomy",
+          "value": 28,
+          "required": null,
+          "unit": "season",
+          "reference_id": null,
+          "reference_kind": null,
+          "slot": null
+        },
+        {
+          "id": 2,
+          "group": "event",
+          "name": "Selected category",
+          "state": "observed",
+          "text": "Minimog Challenges",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": null,
+          "reference_kind": null,
+          "slot": null
+        },
+        {
+          "id": 3,
+          "group": "coverage",
+          "name": "Unknown state",
+          "state": "observed",
+          "text": "Completion, reward claims, selected week and event timing are unknown. Rewards are displayed previews, not ownership.",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": null,
+          "reference_kind": null,
+          "slot": null
+        },
+        {
+          "id": 4,
+          "group": "event",
+          "name": "Reward currency",
+          "state": "observed",
+          "text": "Irregular Tomestone of Astronomy I",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": 51750,
+          "reference_kind": "item",
+          "slot": null
+        },
+        {
+          "id": 5,
+          "group": "event",
+          "name": "Secondary reward currency",
+          "state": "observed",
+          "text": "Uolon Horn Token",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": 51752,
+          "reference_kind": "item",
+          "slot": null
+        },
+        {
+          "id": 10,
+          "group": "selection",
+          "name": "Delubrum Reginae",
+          "state": "observed",
+          "text": "Complete Delubrum Reginae 1 time. ※Delubrum Reginae (Savage) will not be counted.",
+          "value": null,
+          "required": null,
+          "unit": null,
+          "reference_id": 302,
+          "reference_kind": "cs_bonus_content",
+          "slot": null
+        },
+        {
+          "id": 11,
+          "group": "selection",
+          "name": "Displayed reward",
+          "state": "observed",
+          "text": null,
+          "value": 30,
+          "required": null,
+          "unit": "items",
+          "reference_id": 51750,
+          "reference_kind": "item",
+          "slot": null
+        },
+        {
+          "id": 12,
+          "group": "selection",
+          "name": "Displayed secondary reward",
+          "state": "observed",
+          "text": null,
+          "value": 1,
+          "required": null,
+          "unit": "items",
+          "reference_id": 51752,
+          "reference_kind": "item",
+          "slot": null
+        }
+      ],
+      "matched_count": 8,
+      "offset": 0,
+      "limit": 50,
+      "next_offset": null,
+      "truncated": false
+    }
+  }
+]

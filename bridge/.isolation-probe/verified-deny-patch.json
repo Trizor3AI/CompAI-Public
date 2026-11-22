@@ -1,0 +1,187 @@
+{
+  "route": "loopback mock; no subscription/provider request",
+  "attack": null,
+  "shell_control": false,
+  "dynamic_snapshot": true,
+  "catalog_override": "no-patch-models.json",
+  "code_call": "apply_patch",
+  "runtime_pin_verified": true,
+  "web_search_experiment": false,
+  "policy_id": "empty_mcp_resources_v1",
+  "mcp_status_pages": [
+    {
+      "phase": "before_turn",
+      "response": {
+        "data": [],
+        "nextCursor": null
+      }
+    },
+    {
+      "phase": "after_turn",
+      "response": {
+        "data": [],
+        "nextCursor": null
+      }
+    }
+  ],
+  "rpc_methods": [
+    "mcpServerStatus/list",
+    "mcpServerStatus/list"
+  ],
+  "mcp_servers_empty_before_turn": true,
+  "mcp_servers_empty_after_turn": true,
+  "unbounded_connection_retries_disabled": true,
+  "model_listed": true,
+  "provider_capabilities": {
+    "imageGeneration": true,
+    "webSearch": true
+  },
+  "mcp_server_inventory_before_turn": {
+    "data": [],
+    "nextCursor": null
+  },
+  "mcp_servers": 0,
+  "mcp_next_cursor": null,
+  "turn_status": "completed",
+  "turn_error": null,
+  "mcp_server_inventory_after_turn": {
+    "data": [],
+    "nextCursor": null
+  },
+  "requests": [
+    {
+      "path": "/v1/responses",
+      "model": "gpt-6-sol",
+      "synthetic_image_count": 0,
+      "image_input_count": 0,
+      "body_keys": [
+        "client_metadata",
+        "include",
+        "input",
+        "model",
+        "parallel_tool_calls",
+        "prompt_cache_key",
+        "reasoning",
+        "store",
+        "stream",
+        "text",
+        "tool_choice"
+      ],
+      "prompt_tool_declarations": [
+        "type Role = \"user\" | \"assistant\";",
+        "type MetaObject = Record<string, unknown>;",
+        "type Annotations = {",
+        "type Icon = {",
+        "type TextResourceContents = {",
+        "type BlobResourceContents = {",
+        "type TextContent = {",
+        "type ImageContent = {",
+        "type AudioContent = {",
+        "type ResourceLink = {",
+        "type EmbeddedResource = {",
+        "type ContentBlock =",
+        "declare const tools: { get_snapshot(args: {}): Promise<unknown>; };",
+        "declare const tools: { list_mcp_resource_templates(args: {",
+        "declare const tools: { list_mcp_resources(args: {",
+        "declare const tools: { read_mcp_resource(args: {",
+        "declare const tools: { clock__curr_time(args: {}): Promise<{"
+      ],
+      "additional_tools": [
+        "functions.exec",
+        "functions.wait",
+        "functions.request_user_input",
+        "functions.request_user_input_async",
+        "clock.sleep"
+      ],
+      "tools_present": false,
+      "tool_count": 0,
+      "tools": [],
+      "tool_choice": "auto"
+    },
+    {
+      "path": "/v1/responses",
+      "model": "gpt-6-sol",
+      "synthetic_image_count": 0,
+      "image_input_count": 0,
+      "body_keys": [
+        "client_metadata",
+        "include",
+        "input",
+        "model",
+        "parallel_tool_calls",
+        "prompt_cache_key",
+        "reasoning",
+        "store",
+        "stream",
+        "text",
+        "tool_choice"
+      ],
+      "prompt_tool_declarations": [
+        "type Role = \"user\" | \"assistant\";",
+        "type MetaObject = Record<string, unknown>;",
+        "type Annotations = {",
+        "type Icon = {",
+        "type TextResourceContents = {",
+        "type BlobResourceContents = {",
+        "type TextContent = {",
+        "type ImageContent = {",
+        "type AudioContent = {",
+        "type ResourceLink = {",
+        "type EmbeddedResource = {",
+        "type ContentBlock =",
+        "declare const tools: { get_snapshot(args: {}): Promise<unknown>; };",
+        "declare const tools: { list_mcp_resource_templates(args: {",
+        "declare const tools: { list_mcp_resources(args: {",
+        "declare const tools: { read_mcp_resource(args: {",
+        "declare const tools: { clock__curr_time(args: {}): Promise<{"
+      ],
+      "additional_tools": [
+        "functions.exec",
+        "functions.wait",
+        "functions.request_user_input",
+        "functions.request_user_input_async",
+        "clock.sleep"
+      ],
+      "tools_present": false,
+      "tool_count": 0,
+      "tools": [],
+      "tool_choice": "auto"
+    }
+  ],
+  "tool_outputs": [
+    {
+      "output": "[{'type': 'input_text', 'text': 'Script failed\\nWall time 0.0 seconds\\nOutput:\\n'}, {'type': 'input_text', 'text': 'Script error:\\nTypeError: tools.apply_patch is not a function\\n    at exec_main.mjs:1:18'}]",
+      "sentinel_visible": false
+    }
+  ],
+  "code_host": [],
+  "outside_fixture_unchanged": true,
+  "turn_start_calls": 1,
+  "model_requests": 2,
+  "mcp_servers_empty": true,
+  "diagnostics": [],
+  "declared_nested_tools": [
+    "clock__curr_time",
+    "get_snapshot",
+    "list_mcp_resource_templates",
+    "list_mcp_resources",
+    "read_mcp_resource"
+  ],
+  "checks": {
+    "turn_completed": true,
+    "unbounded_connection_retries_disabled": true,
+    "known_model": true,
+    "loopback_response_used": true,
+    "outside_fixture_unchanged": true,
+    "mcp_servers_empty_before_turn": true,
+    "mcp_servers_empty_after_turn": true,
+    "no_direct_provider_tools": true,
+    "only_expected_wrappers": true,
+    "only_requested_model": true,
+    "shell_not_declared": true,
+    "patch_not_declared": true,
+    "only_expected_nested_tools": true,
+    "blocked_in_code_host": true
+  },
+  "passed": true
+}

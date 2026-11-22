@@ -1,0 +1,2713 @@
+{
+  "schema_version": 2,
+  "policy_id": "empty_mcp_resources_v1",
+  "all_passed": true,
+  "validated_at_utc": "2026-11-08T09:35:31.476842+00:00",
+  "route": "loopback Responses only; no credentials, game data, provider or web requests",
+  "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+  "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+  "runtime_files": {
+    "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+    "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+  },
+  "models": [
+    {
+      "id": "gpt-6-astra",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-astra",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-astra",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-astra",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": [
+        {
+          "effort": "ultra",
+          "reason": "Unexpected provider reasoning effort: ['xhigh']",
+          "case": {
+            "case": "enabled-web",
+            "model": "gpt-6-astra",
+            "effort": "ultra",
+            "passed": false,
+            "runtime": {
+              "codex_version": "codex-cli 0.167.0",
+              "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+              "runtime_files": {
+                "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+                "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+              }
+            },
+            "policy_id": "empty_mcp_resources_v1",
+            "clock_tool_expected": true,
+            "mcp_servers_empty": true,
+            "error": "Unexpected provider reasoning effort: ['xhigh']"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-sol",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-sol",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-sol",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": [
+        {
+          "effort": "ultra",
+          "reason": "Unexpected provider reasoning effort: ['xhigh']",
+          "case": {
+            "case": "enabled-web",
+            "model": "gpt-6.1-sol",
+            "effort": "ultra",
+            "passed": false,
+            "runtime": {
+              "codex_version": "codex-cli 0.167.0",
+              "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+              "runtime_files": {
+                "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+                "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+              }
+            },
+            "policy_id": "empty_mcp_resources_v1",
+            "clock_tool_expected": true,
+            "mcp_servers_empty": true,
+            "error": "Unexpected provider reasoning effort: ['xhigh']"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-terra",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-terra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-terra",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-terra",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6.1-terra",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-6.1-terra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-6.1-terra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": [
+        {
+          "effort": "ultra",
+          "reason": "Unexpected provider reasoning effort: ['xhigh']",
+          "case": {
+            "case": "enabled-web",
+            "model": "gpt-6.1-terra",
+            "effort": "ultra",
+            "passed": false,
+            "runtime": {
+              "codex_version": "codex-cli 0.167.0",
+              "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+              "runtime_files": {
+                "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+                "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+              }
+            },
+            "policy_id": "empty_mcp_resources_v1",
+            "clock_tool_expected": true,
+            "mcp_servers_empty": true,
+            "error": "Unexpected provider reasoning effort: ['xhigh']"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-sol",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-sol",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-sol",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-sol",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-sol",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": [
+        {
+          "effort": "ultra",
+          "reason": "Unexpected provider reasoning effort: ['max']",
+          "case": {
+            "case": "enabled-web",
+            "model": "gpt-6-sol",
+            "effort": "ultra",
+            "passed": false,
+            "runtime": {
+              "codex_version": "codex-cli 0.167.0",
+              "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+              "runtime_files": {
+                "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+                "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+              }
+            },
+            "policy_id": "empty_mcp_resources_v1",
+            "clock_tool_expected": true,
+            "mcp_servers_empty": true,
+            "error": "Unexpected provider reasoning effort: ['max']"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-luna",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-luna",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-6-luna",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": true,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "clock__curr_time",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": []
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-sol",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-sol",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-sol",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": [
+        {
+          "effort": "ultra",
+          "reason": "Unexpected provider reasoning effort: ['max']",
+          "case": {
+            "case": "enabled-web",
+            "model": "gpt-5.6-sol",
+            "effort": "ultra",
+            "passed": false,
+            "runtime": {
+              "codex_version": "codex-cli 0.167.0",
+              "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+              "runtime_files": {
+                "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+                "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+              }
+            },
+            "policy_id": "empty_mcp_resources_v1",
+            "clock_tool_expected": false,
+            "mcp_servers_empty": true,
+            "error": "Unexpected provider reasoning effort: ['max']"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-terra",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-terra",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-terra",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-terra",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-5.6-terra",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": [
+        {
+          "effort": "ultra",
+          "reason": "Unexpected provider reasoning effort: ['max']",
+          "case": {
+            "case": "enabled-web",
+            "model": "gpt-5.6-terra",
+            "effort": "ultra",
+            "passed": false,
+            "runtime": {
+              "codex_version": "codex-cli 0.167.0",
+              "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+              "runtime_files": {
+                "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+                "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+              }
+            },
+            "policy_id": "empty_mcp_resources_v1",
+            "clock_tool_expected": false,
+            "mcp_servers_empty": true,
+            "error": "Unexpected provider reasoning effort: ['max']"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "passed": true,
+      "cases": [
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-luna",
+          "effort": "low",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-luna",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-luna",
+          "effort": "high",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-luna",
+          "effort": "xhigh",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled-web",
+          "model": "gpt-5.6-luna",
+          "effort": "max",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": true,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "enabled",
+          "model": "gpt-5.6-luna",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "discover_tools",
+            "invoke_tool",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "lookup_calls": 3,
+          "pagination_checked": true,
+          "unmentioned_id_lookup_checked": true,
+          "completion_states_checked": [
+            false,
+            true,
+            null
+          ],
+          "web_completion_simulated": false,
+          "discovery_metadata_intact": true,
+          "model_requests": 6,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        },
+        {
+          "case": "disabled",
+          "model": "gpt-5.6-luna",
+          "effort": "medium",
+          "passed": true,
+          "runtime": {
+            "codex_version": "codex-cli 0.167.0",
+            "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+            "runtime_files": {
+              "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+              "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+            }
+          },
+          "policy_id": "empty_mcp_resources_v1",
+          "clock_tool_expected": false,
+          "mcp_servers_empty": true,
+          "nested_tools": [
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource"
+          ],
+          "shell_and_patch_denied": true,
+          "disabled_tool_absent": true,
+          "disabled_callback_calls": 0,
+          "injected_tool_denied": true,
+          "model_requests": 3,
+          "initial_summary_only": true,
+          "unbounded_connection_retries_disabled": true,
+          "credential_free": true,
+          "unexpected_wrappers": false,
+          "exact_model_and_effort": true,
+          "provider_fallback_disabled": true
+        }
+      ],
+      "excluded_efforts": []
+    }
+  ],
+  "excluded_models": [
+    {
+      "id": "gpt-5.5",
+      "reason": "No validated code-mode tool isolation path",
+      "case": {
+        "case": "enabled-web",
+        "model": "gpt-5.5",
+        "effort": "low",
+        "passed": false,
+        "runtime": {
+          "codex_version": "codex-cli 0.167.0",
+          "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+          "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+          "runtime_files": {
+            "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+            "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+          }
+        },
+        "policy_id": "empty_mcp_resources_v1",
+        "clock_tool_expected": false,
+        "mcp_servers_empty": true,
+        "error": "Unexpected directly registered provider tools: ['discover_tools', 'invoke_tool', 'request_user_input', 'web_search']"
+      }
+    }
+  ],
+  "limitations": [
+    "all_passed covers only models and efforts listed in the allowed models array",
+    "Excluded models and remapped efforts are not selectable",
+    "Provider availability and account entitlement are not tested offline",
+    "No live answer quality or live search quality claim"
+  ]
+}

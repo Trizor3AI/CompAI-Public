@@ -1,0 +1,54 @@
+<Project>
+  <!-- The package is assembled from an explicit allowlist, never from bin/Release. -->
+  <PropertyGroup>
+    <CompanionReleaseStage>$(MSBuildProjectDirectory)\obj\companion-package-release\</CompanionReleaseStage>
+    <CompanionPackagerOutput Condition="'$(Configuration)' == 'Debug'">$(OutputPath)</CompanionPackagerOutput>
+    <CompanionPackagerOutput Condition="'$(Configuration)' == 'Release'">$(CompanionReleaseStage)</CompanionPackagerOutput>
+    <CompanionMakeZip Condition="'$(Configuration)' == 'Debug'">false</CompanionMakeZip>
+    <CompanionMakeZip Condition="'$(Configuration)' == 'Release'">true</CompanionMakeZip>
+  </PropertyGroup>
+
+  <Target Name="StageCompanionDebug" Condition="'$(Configuration)' == 'Debug'">
+    <MakeDir Directories="$(TargetDir)companion\.isolation-probe" />
+    <Copy SourceFiles="@(CompanionPackageAsset)"
+          DestinationFiles="@(CompanionPackageAsset->'$(TargetDir)%(PackagePath)')" />
+  </Target>
+
+  <Target Name="StageCompanionRelease" Condition="'$(Configuration)' == 'Release'">
+    <RemoveDir Directories="$(CompanionReleaseStage)" Condition="Exists('$(CompanionReleaseStage)')" />
+    <MakeDir Directories="$(CompanionReleaseStage)companion\.isolation-probe" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(CompanionReleaseStage)$(AssemblyName).dll" />
+    <Copy SourceFiles="$(TargetDir)$(AssemblyName).deps.json"
+          DestinationFiles="$(CompanionReleaseStage)$(AssemblyName).deps.json"
+          Condition="Exists('$(TargetDir)$(AssemblyName).deps.json')" />
+    <Copy SourceFiles="@(CompanionPackageAsset)"
+          DestinationFiles="@(CompanionPackageAsset->'$(CompanionReleaseStage)%(PackagePath)')" />
+  </Target>
+
+  <Target Name="PackageCompAI" AfterTargets="Build" DependsOnTargets="StageCompanionDebug;StageCompanionRelease"
+          Condition="'$(Configuration)' == 'Debug' or '$(Configuration)' == 'Release'">
+    <DalamudPackager ProjectDir="$(ProjectDir)"
+                     OutputPath="$(CompanionPackagerOutput)"
+                     AssemblyName="$(AssemblyName)"
+                     MakeZip="$(CompanionMakeZip)"
+                     Author="$(Author)"
+                     Name="$(Name)"
+                     MinimumDalamudVersion="$(MinimumDalamudVersion)"
+                     Punchline="$(Punchline)"
+                     Description="$(Description)"
+                     ApplicableVersion="$(ApplicableVersion)"
+                     RepoUrl="$(RepoUrl)"
+                     Tags="$(Tags)"
+                     CategoryTags="$(CategoryTags)"
+                     DalamudApiLevel="$(DalamudApiLevel)"
+                     LoadRequiredState="$(LoadRequiredState)"
+                     LoadSync="$(LoadSync)"
+                     CanUnloadAsync="$(CanUnloadAsync)"
+                     LoadPriority="$(LoadPriority)"
+                     ImageUrls="$(ImageUrls)"
+                     IconUrl="$(IconUrl)"
+                     Changelog="$(Changelog)"
+                     AcceptsFeedback="$(AcceptsFeedback)"
+                     FeedbackMessage="$(FeedbackMessage)" />
+  </Target>
+</Project>

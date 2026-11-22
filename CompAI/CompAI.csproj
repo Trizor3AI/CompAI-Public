@@ -1,0 +1,147 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <Version>0.53.23.0</Version>
+    <IconUrl>https://github.com/Trizor3AI/CompAI-Public/releases/download/v$(Version)/icon.png</IconUrl>
+    <Name>CompAI</Name>
+    <Tags>CompAI</Tags>
+    <Author>Trizor3</Author>
+    <Authors>Trizor3</Authors>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <Copyright>Copyright (c) 2026 Trizor3</Copyright>
+    <Punchline>Your AI sidekick for adventures, answers, and a little banter.</Punchline>
+    <Description>An AI companion for quest questions, gear ideas, crafting plans, or a chat between adventures. Pick its personality and choose which game details it can see. Open /compai to chat, or /compai settings to get started. Requires a supported AI account.</Description>
+    <AcceptsFeedback>false</AcceptsFeedback>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <!-- Keep file and line information useful without recording the checkout or its Git origin. -->
+    <DebugType>embedded</DebugType>
+    <EnableSourceLink>false</EnableSourceLink>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <GenerateRepositoryUrlAttribute>false</GenerateRepositoryUrlAttribute>
+    <EmbedUntrackedSources>false</EmbedUntrackedSources>
+    <EmbedAllSources>false</EmbedAllSources>
+    <!-- Use the same virtual root on a local build and on CI. -->
+    <DeterministicSourcePaths>false</DeterministicSourcePaths>
+    <PathMap>$([MSBuild]::NormalizeDirectory('$(MSBuildProjectDirectory)', '..').Replace(',', ',,').Replace('=', '=='))=/_/CompAI/</PathMap>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\kofi_symbol.png" LogicalName="CompAI.Assets.kofi_symbol.png" />
+    <EmbeddedResource Include="Assets\kofi_wordmark.png" LogicalName="CompAI.Assets.kofi_wordmark.png" />
+    <CompanionPackageAsset Include="..\LICENSE" PackagePath="companion\LICENSE" />
+    <CompanionPackageAsset Include="..\CREDITS.md" PackagePath="companion\CREDITS.md" />
+    <CompanionPackageAsset Include="..\THIRD-PARTY-NOTICES.md" PackagePath="companion\THIRD-PARTY-NOTICES.md" />
+    <CompanionPackageAsset Include="..\bridge\licenses\codex\LICENSE.txt" PackagePath="companion\licenses\codex\LICENSE.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\codex\NOTICE.txt" PackagePath="companion\licenses\codex\NOTICE.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\codex\THIRD-PARTY-NOTICES.txt" PackagePath="companion\licenses\codex\THIRD-PARTY-NOTICES.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\codex\ATTRIBUTION-LIMITS.txt" PackagePath="companion\licenses\codex\ATTRIBUTION-LIMITS.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\codex\README.txt" PackagePath="companion\licenses\codex\README.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\grok\LICENSE.txt" PackagePath="companion\licenses\grok\LICENSE.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\grok\THIRD_PARTY_NOTICES.md" PackagePath="companion\licenses\grok\THIRD_PARTY_NOTICES.md" />
+    <CompanionPackageAsset Include="..\bridge\licenses\grok\THIRD-PARTY-NOTICES.upstream-2bdd1d6.txt" PackagePath="companion\licenses\grok\THIRD-PARTY-NOTICES.upstream-2bdd1d6.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\grok\LICENSE-MPL-2.0.txt" PackagePath="companion\licenses\grok\LICENSE-MPL-2.0.txt" />
+    <CompanionPackageAsset Include="..\bridge\licenses\grok\README.md" PackagePath="companion\licenses\grok\README.md" />
+    <CompanionPackageAsset Include="..\bridge\licenses\manifest.json" PackagePath="companion\licenses\manifest.json" />
+    <CompanionPackageAsset Include="..\bridge\currency_lookup.py" PackagePath="companion\currency_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\duty_lookup.py" PackagePath="companion\duty_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\collection_lookup.py" PackagePath="companion\collection_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\progression_lookup.py" PackagePath="companion\progression_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\crafting_log_lookup.py" PackagePath="companion\crafting_log_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\menu_lookup.py" PackagePath="companion\menu_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\activity_lookup.py" PackagePath="companion\activity_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\game_definitions_lookup.py" PackagePath="companion\game_definitions_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\gc_supply_lookup.py" PackagePath="companion\gc_supply_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\npc_target_lookup.py" PackagePath="companion\npc_target_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\chat_attachments.py" PackagePath="companion\chat_attachments.py" />
+    <CompanionPackageAsset Include="..\bridge\companion.py" PackagePath="companion\companion.py" />
+    <CompanionPackageAsset Include="..\bridge\companion_request.py" PackagePath="companion\companion_request.py" />
+    <CompanionPackageAsset Include="..\bridge\companion_tools.py" PackagePath="companion\companion_tools.py" />
+    <CompanionPackageAsset Include="..\bridge\deferred_tools.py" PackagePath="companion\deferred_tools.py" />
+    <CompanionPackageAsset Include="..\bridge\saved_item_search.py" PackagePath="companion\saved_item_search.py" />
+    <CompanionPackageAsset Include="..\bridge\saved_item_valuation.py" PackagePath="companion\saved_item_valuation.py" />
+    <CompanionPackageAsset Include="..\bridge\market_batch.py" PackagePath="companion\market_batch.py" />
+    <CompanionPackageAsset Include="..\bridge\market_request_queue.py" PackagePath="companion\market_request_queue.py" />
+    <CompanionPackageAsset Include="..\bridge\valuation_checkpoint.py" PackagePath="companion\valuation_checkpoint.py" />
+    <CompanionPackageAsset Include="..\bridge\companion_provider.py" PackagePath="companion\companion_provider.py" />
+    <CompanionPackageAsset Include="..\bridge\codex_tool_policy.py" PackagePath="companion\codex_tool_policy.py" />
+    <CompanionPackageAsset Include="..\bridge\grok_provider.py" PackagePath="companion\grok_provider.py" />
+    <CompanionPackageAsset Include="..\bridge\grok_credentials.py" PackagePath="companion\grok_credentials.py" />
+    <CompanionPackageAsset Include="..\bridge\grok_oauth.py" PackagePath="companion\grok_oauth.py" />
+    <CompanionPackageAsset Include="..\bridge\credential_store.py" PackagePath="companion\credential_store.py" />
+    <CompanionPackageAsset Include="..\bridge\grok_runtime_pin.json" PackagePath="companion\grok_runtime_pin.json" />
+    <CompanionPackageAsset Include="..\bridge\runtime\grok-win-x64\grok.exe" PackagePath="companion\runtime\grok-win-x64\grok.exe" />
+    <CompanionPackageAsset Include="..\bridge\python-runtime.json" PackagePath="companion\python-runtime.json" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_asyncio.pyd" PackagePath="companion\python\_asyncio.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_bz2.pyd" PackagePath="companion\python\_bz2.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_ctypes.pyd" PackagePath="companion\python\_ctypes.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_decimal.pyd" PackagePath="companion\python\_decimal.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_elementtree.pyd" PackagePath="companion\python\_elementtree.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_hashlib.pyd" PackagePath="companion\python\_hashlib.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_lzma.pyd" PackagePath="companion\python\_lzma.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_multiprocessing.pyd" PackagePath="companion\python\_multiprocessing.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_overlapped.pyd" PackagePath="companion\python\_overlapped.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_queue.pyd" PackagePath="companion\python\_queue.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_remote_debugging.pyd" PackagePath="companion\python\_remote_debugging.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_socket.pyd" PackagePath="companion\python\_socket.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_sqlite3.pyd" PackagePath="companion\python\_sqlite3.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_ssl.pyd" PackagePath="companion\python\_ssl.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_uuid.pyd" PackagePath="companion\python\_uuid.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_wmi.pyd" PackagePath="companion\python\_wmi.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_zoneinfo.pyd" PackagePath="companion\python\_zoneinfo.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\_zstd.pyd" PackagePath="companion\python\_zstd.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\libcrypto-3.dll" PackagePath="companion\python\libcrypto-3.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\libffi-8.dll" PackagePath="companion\python\libffi-8.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\libssl-3.dll" PackagePath="companion\python\libssl-3.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\libtommath.dll" PackagePath="companion\python\libtommath.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\LICENSE.txt" PackagePath="companion\python\LICENSE.txt" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\pyexpat.pyd" PackagePath="companion\python\pyexpat.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\python.cat" PackagePath="companion\python\python.cat" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\python.exe" PackagePath="companion\python\python.exe" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\python3.dll" PackagePath="companion\python\python3.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\python314._pth" PackagePath="companion\python\python314._pth" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\python314.dll" PackagePath="companion\python\python314.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\python314.zip" PackagePath="companion\python\python314.zip" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\pythonw.exe" PackagePath="companion\python\pythonw.exe" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\select.pyd" PackagePath="companion\python\select.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\sqlite3.dll" PackagePath="companion\python\sqlite3.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\unicodedata.pyd" PackagePath="companion\python\unicodedata.pyd" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\vcruntime140.dll" PackagePath="companion\python\vcruntime140.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\vcruntime140_1.dll" PackagePath="companion\python\vcruntime140_1.dll" />
+    <CompanionPackageAsset Include="..\bridge\runtime\python-win-x64\winsound.pyd" PackagePath="companion\python\winsound.pyd" />
+    <CompanionPackageAsset Include="..\bridge\companion_metrics.py" PackagePath="companion\companion_metrics.py" />
+    <CompanionPackageAsset Include="..\bridge\companion_process.py" PackagePath="companion\companion_process.py" />
+    <CompanionPackageAsset Include="..\bridge\streamed_answer.py" PackagePath="companion\streamed_answer.py" />
+    <CompanionPackageAsset Include="..\bridge\prepare_isolation_catalog.py" PackagePath="companion\prepare_isolation_catalog.py" />
+    <CompanionPackageAsset Include="..\bridge\runtime_bundle.py" PackagePath="companion\runtime_bundle.py" />
+    <CompanionPackageAsset Include="..\bridge\runtime\win-x64\codex.exe" PackagePath="companion\runtime\win-x64\codex.exe" />
+    <CompanionPackageAsset Include="..\bridge\runtime\win-x64\codex-code-mode-host.exe" PackagePath="companion\runtime\win-x64\codex-code-mode-host.exe" />
+    <CompanionPackageAsset Include="..\bridge\inventory_question.py" PackagePath="companion\inventory_question.py" />
+    <CompanionPackageAsset Include="..\bridge\inventory_lookup.py" PackagePath="companion\inventory_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\storage_lookup.py" PackagePath="companion\storage_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\game_context_lookup.py" PackagePath="companion\game_context_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\npc_dialogue_lookup.py" PackagePath="companion\npc_dialogue_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\character_details_lookup.py" PackagePath="companion\character_details_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\chat_history_lookup.py" PackagePath="companion\chat_history_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\personality.py" PackagePath="companion\personality.py" />
+    <CompanionPackageAsset Include="..\bridge\personality_details_lookup.py" PackagePath="companion\personality_details_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\game_data_tools.py" PackagePath="companion\game_data_tools.py" />
+    <CompanionPackageAsset Include="..\bridge\gear_plan_lookup.py" PackagePath="companion\gear_plan_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\quest_context.py" PackagePath="companion\quest_context.py" />
+    <CompanionPackageAsset Include="..\bridge\quest_lookup.py" PackagePath="companion\quest_lookup.py" />
+    <CompanionPackageAsset Include="..\bridge\model_selection.py" PackagePath="companion\model_selection.py" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\model-selection-validation.json" PackagePath="companion\.isolation-probe\model-selection-validation.json" />
+    <CompanionPackageAsset Include="..\bridge\item_sources.json" PackagePath="companion\item_sources.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\no-patch-models.json" PackagePath="companion\.isolation-probe\no-patch-models.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\runtime-pin.json" PackagePath="companion\.isolation-probe\runtime-pin.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\validation-success.json" PackagePath="companion\.isolation-probe\validation-success.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\web-search-validation.json" PackagePath="companion\.isolation-probe\web-search-validation.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-shell-control.json" PackagePath="companion\.isolation-probe\verified-shell-control.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-text.json" PackagePath="companion\.isolation-probe\verified-text.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-snapshot.json" PackagePath="companion\.isolation-probe\verified-snapshot.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-deny-command.json" PackagePath="companion\.isolation-probe\verified-deny-command.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-deny-patch.json" PackagePath="companion\.isolation-probe\verified-deny-patch.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-inspect.json" PackagePath="companion\.isolation-probe\verified-inspect.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-mcp-resources.json" PackagePath="companion\.isolation-probe\verified-mcp-resources.json" />
+    <CompanionPackageAsset Include="..\bridge\.isolation-probe\verified-mcp-inherited-server.json" PackagePath="companion\.isolation-probe\verified-mcp-inherited-server.json" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+# Consistent source files across checkouts.
+* text=auto
+*.cs text eol=lf
+*.csproj text eol=lf
+*.targets text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.githooks/* text eol=lf
+
+# Hash-bound catalog and validation records must retain their exact bytes.
+/.isolation-probe/** -text
+/bridge/.isolation-probe/** -text
+
+# Preserve exact upstream license/notice bytes and their recorded digests.
+/bridge/licenses/** -text

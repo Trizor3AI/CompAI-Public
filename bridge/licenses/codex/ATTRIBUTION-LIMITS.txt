@@ -1,0 +1,54 @@
+Attribution scope -- Codex 0.167.0 private notice candidate
+
+This collection maps the x86_64-pc-windows-msvc default-feature normal/build
+source dependencies of codex-cli, codex-code-mode-host and codex-network-proxy.
+Build dependencies are included. Source selection is not a per-executable link
+map. Native source-tree notices and the producer full-lock inventory are
+separate categories; retaining a notice does not assert every file is linked.
+
+Earlier notice material is reused only for identical registry archive bytes
+or an identical Git repository/revision/package identity. New source notice
+bytes and original copyright lines are preserved. The two age crates' full
+licenses were recovered at their published .cargo_vcs_info revisions and
+checked against Git blob identities. No current-branch replacement was used.
+
+deno_core_icudata 0.78.0 declares MIT but its exact source tree supplies no
+copyright/license document. Standard MIT permission, conditions and disclaimer
+are included without inventing an owner or year. The published author metadata
+is not asserted copyright ownership. Its ICU data bytes exactly match the
+pinned native ICU common/icudtl.dat; that component's notices are mapped too.
+The unchanged debugserver-types and fxhash source-specific limitations remain
+in their package observations; no missing owner attribution is manufactured.
+
+Some files are license pointers or short grant headers. Retained observations
+identify their exact-revision resolution. HPKE's Apache file is an attribution
+header; its full MIT license and the full Apache text are both supplied here.
+All original pointer/header bytes remain present.
+
+Native material includes original licenses and selected glibc leading source
+headers. The separate source downloads and practical native-to-host rebuild
+proof address source/relink work. This notice archive alone is not a source
+bundle, an official-binary reproduction or a legal conclusion. The native
+producer full-lock source inventory has seven declaration-only mappings:
+block 0.1.6; d3d12 0.4.1; dispatch 0.2.0; hexf-parse 0.2.1;
+malloc_buf 0.0.6; objc_exception 0.1.2; ultraviolet 0.8.1.
+Their exact published manifests declare the recorded license alternatives,
+but a matching separate upstream copyright/license notice was not established.
+Standard terms are supplied under declaration-only scope, without invented
+owners/years or a claim of upstream notice recovery. Two lack published VCS
+metadata; the exact five other repository roots supplied no separate license
+file. Their original source archives remain unchanged. These limits are not
+silently counted as missing selected-consumer notices or as legal clearance.
+The two winapi GNU 0.4.0 packages also lack published VCS metadata, but their
+exact published build.rs/src/lib.rs copyright and dual-license headers are
+retained verbatim with standard full license terms. They are not owner-less
+declaration-only mappings.
+
+The mxc-sdk source delivery omits one unused 3,212,895-byte WSL nupkg under the
+documented Windows default three-root selection. Preserve its upstream license,
+the omitted-asset NOTICE/nuspec and projection scope with the source download.
+Do not claim that projection covers targets/features which need the asset.
+
+Final package integration, source-download availability and publication remain
+separate checks. Original text files and source URLs are retained in this
+archive; the displayed text may normalize its encoding, never its wording.

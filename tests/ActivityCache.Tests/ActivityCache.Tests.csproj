@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/ActivitySnapshot.cs" Link="ActivitySnapshot.cs" />
+    <Compile Include="../../CompAI/SelectedMacroContract.cs" Link="SelectedMacroContract.cs" />
+    <Compile Include="../../CompAI/MogpendiumContract.cs" Link="MogpendiumContract.cs" />
+    <Compile Include="../../CompAI/ActivityLookup.cs" Link="ActivityLookup.cs" />
+    <Compile Include="../../CompAI/ActivityObservationCache.cs" Link="ActivityObservationCache.cs" />
+    <Compile Include="../../CompAI/ActivityAccess.cs" Link="ActivityAccess.cs" />
+    <Compile Include="../../CompAI/Plugin.Activities.cs" Link="Plugin.Activities.cs" />
+    <Compile Include="../../CompAI/Plugin.Access.cs" Link="Plugin.Access.cs" />
+    <Compile Include="../../CompAI/CompanionAccessSettings.cs" Link="CompanionAccessSettings.cs" />
+    <Compile Include="../../CompAI/ChatContextSelection.cs" Link="ChatContextSelection.cs" />
+      <Compile Include="../../CompAI/FieldRecordContract.cs" Link="FieldRecordContract.cs" />
+      <Compile Include="../../CompAI/MahjongContract.cs" Link="MahjongContract.cs" />
+      <Compile Include="../../CompAI/PortableArchiveContract.cs" Link="PortableArchiveContract.cs" />
+  </ItemGroup>
+</Project>

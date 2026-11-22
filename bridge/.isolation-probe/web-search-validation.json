@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "policy_id": "empty_mcp_resources_v1",
+  "validated_at_utc": "2026-11-08T09:33:41.694758+00:00",
+  "route": "loopback custom provider only; no external/provider request",
+  "codex_version": "codex-cli 0.167.0",
+  "binary_sha256": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+  "runtime_files": {
+    "codex.exe": "edfdd48f8b458af0906e507b4cb05217b326c3d6e515e9f024e05e3b8d650f70",
+    "codex-code-mode-host.exe": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35"
+  },
+  "catalog_sha256": "4c9cb7c9d56372d65fb05740548aab27abc59aec2ceb439afe7bb45aaeabee2e",
+  "model": "gpt-6-sol",
+  "cases": [
+    {
+      "name": "text",
+      "checks": {
+        "turn_completed": true,
+        "unbounded_connection_retries_disabled": true,
+        "known_model": true,
+        "loopback_response_used": true,
+        "outside_fixture_unchanged": true,
+        "mcp_servers_empty_before_turn": true,
+        "mcp_servers_empty_after_turn": true,
+        "no_direct_provider_tools": true,
+        "only_expected_wrappers": true,
+        "only_requested_model": true,
+        "hosted_web_declared": true,
+        "patch_not_declared": true,
+        "no_mcp_servers": true,
+        "shell_not_declared": true,
+        "no_other_nested_tools": true
+      },
+      "nested_tool_declarations": [
+        "declare const tools: { clock__curr_time(args: {}): Promise<{",
+        "declare const tools: { list_mcp_resource_templates(args: {",
+        "declare const tools: { list_mcp_resources(args: {",
+        "declare const tools: { read_mcp_resource(args: {",
+        "declare const tools: { web__run(args: {"
+      ],
+      "nested_tool_names": [
+        "clock__curr_time",
+        "list_mcp_resource_templates",
+        "list_mcp_resources",
+        "read_mcp_resource",
+        "web__run"
+      ],
+      "code_host": []
+    },
+    {
+      "name": "inspect",
+      "checks": {
+        "turn_completed": true,
+        "unbounded_connection_retries_disabled": true,
+        "known_model": true,
+        "loopback_response_used": true,
+        "outside_fixture_unchanged": true,
+        "mcp_servers_empty_before_turn": true,
+        "mcp_servers_empty_after_turn": true,
+        "no_direct_provider_tools": true,
+        "only_expected_wrappers": true,
+        "only_requested_model": true,
+        "hosted_web_declared": true,
+        "patch_not_declared": true,
+        "no_mcp_servers": true,
+        "shell_not_declared": true,
+        "no_other_nested_tools": true,
+        "code_host_inventory": true,
+        "no_node_or_fetch_globals": true
+      },
+      "nested_tool_declarations": [
+        "declare const tools: { clock__curr_time(args: {}): Promise<{",
+        "declare const tools: { list_mcp_resource_templates(args: {",
+        "declare const tools: { list_mcp_resources(args: {",
+        "declare const tools: { read_mcp_resource(args: {",
+        "declare const tools: { web__run(args: {"
+      ],
+      "nested_tool_names": [
+        "clock__curr_time",
+        "list_mcp_resource_templates",
+        "list_mcp_resources",
+        "read_mcp_resource",
+        "web__run"
+      ],
+      "code_host": [
+        {
+          "tools": [
+            "clock__curr_time",
+            "list_mcp_resource_templates",
+            "list_mcp_resources",
+            "read_mcp_resource",
+            "web__run"
+          ],
+          "require": "undefined",
+          "process": "undefined",
+          "fetch": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "deny-command",
+      "checks": {
+        "turn_completed": true,
+        "unbounded_connection_retries_disabled": true,
+        "known_model": true,
+        "loopback_response_used": true,
+        "outside_fixture_unchanged": true,
+        "mcp_servers_empty_before_turn": true,
+        "mcp_servers_empty_after_turn": true,
+        "no_direct_provider_tools": true,
+        "only_expected_wrappers": true,
+        "only_requested_model": true,
+        "hosted_web_declared": true,
+        "patch_not_declared": true,
+        "no_mcp_servers": true,
+        "shell_not_declared": true,
+        "no_other_nested_tools": true,
+        "blocked_in_code_host": true
+      },
+      "nested_tool_declarations": [
+        "declare const tools: { clock__curr_time(args: {}): Promise<{",
+        "declare const tools: { list_mcp_resource_templates(args: {",
+        "declare const tools: { list_mcp_resources(args: {",
+        "declare const tools: { read_mcp_resource(args: {",
+        "declare const tools: { web__run(args: {"
+      ],
+      "nested_tool_names": [
+        "clock__curr_time",
+        "list_mcp_resource_templates",
+        "list_mcp_resources",
+        "read_mcp_resource",
+        "web__run"
+      ],
+      "code_host": []
+    },
+    {
+      "name": "deny-patch",
+      "checks": {
+        "turn_completed": true,
+        "unbounded_connection_retries_disabled": true,
+        "known_model": true,
+        "loopback_response_used": true,
+        "outside_fixture_unchanged": true,
+        "mcp_servers_empty_before_turn": true,
+        "mcp_servers_empty_after_turn": true,
+        "no_direct_provider_tools": true,
+        "only_expected_wrappers": true,
+        "only_requested_model": true,
+        "hosted_web_declared": true,
+        "patch_not_declared": true,
+        "no_mcp_servers": true,
+        "shell_not_declared": true,
+        "no_other_nested_tools": true,
+        "blocked_in_code_host": true
+      },
+      "nested_tool_declarations": [
+        "declare const tools: { clock__curr_time(args: {}): Promise<{",
+        "declare const tools: { list_mcp_resource_templates(args: {",
+        "declare const tools: { list_mcp_resources(args: {",
+        "declare const tools: { read_mcp_resource(args: {",
+        "declare const tools: { web__run(args: {"
+      ],
+      "nested_tool_names": [
+        "clock__curr_time",
+        "list_mcp_resource_templates",
+        "list_mcp_resources",
+        "read_mcp_resource",
+        "web__run"
+      ],
+      "code_host": []
+    }
+  ],
+  "all_passed": true,
+  "limitations": [
+    "Native ChatGPT hosted-search entitlement untested",
+    "Live search destination, result handling and citation quality untested"
+  ]
+}

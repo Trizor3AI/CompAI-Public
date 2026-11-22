@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DalamudLibPath Condition="'$(DalamudLibPath)' == ''">$(APPDATA)/XIVLauncher/addon/Hooks/dev</DalamudLibPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/ArmouryReader.cs" Link="ArmouryReader.cs" />
+    <Compile Include="../../CompAI/StorageSnapshot.cs" Link="StorageSnapshot.cs" />
+    <Compile Include="../../CompAI/StorageLookup.cs" Link="StorageLookup.cs" />
+    <Compile Include="../../CompAI/StorageBrowser.cs" Link="StorageBrowser.cs" />
+    <Compile Include="../../CompAI/ValuationLookup.cs" Link="ValuationLookup.cs" />
+    <Reference Include="Dalamud"><HintPath>$(DalamudLibPath)/Dalamud.dll</HintPath></Reference>
+    <Reference Include="FFXIVClientStructs"><HintPath>$(DalamudLibPath)/FFXIVClientStructs.dll</HintPath></Reference>
+    <Reference Include="Lumina"><HintPath>$(DalamudLibPath)/Lumina.dll</HintPath></Reference>
+    <Reference Include="Lumina.Excel"><HintPath>$(DalamudLibPath)/Lumina.Excel.dll</HintPath></Reference>
+    <Reference Include="InteropGenerator.Runtime"><HintPath>$(DalamudLibPath)/InteropGenerator.Runtime.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

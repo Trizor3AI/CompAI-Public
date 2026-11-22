@@ -1,0 +1,92 @@
+{
+  "route": "loopback mock; no subscription/provider request",
+  "attack": null,
+  "shell_control": false,
+  "dynamic_snapshot": false,
+  "catalog_override": "no-patch-models.json",
+  "code_call": null,
+  "runtime_pin_verified": true,
+  "web_search_experiment": false,
+  "policy_id": "empty_mcp_resources_v1",
+  "mcp_status_pages": [
+    {
+      "phase": "before_turn",
+      "response": {
+        "data": [
+          {
+            "name": "compai_inherited_synthetic",
+            "runtimeStatus": "disabled",
+            "pluginId": null,
+            "httpOrigin": "http://127.0.0.1:56346",
+            "serverInfo": null,
+            "serverCapabilities": null,
+            "toolListMeta": null,
+            "tools": {},
+            "toolsError": null,
+            "resources": [],
+            "resourceTemplates": [],
+            "authStatus": "unsupported"
+          }
+        ],
+        "nextCursor": null
+      }
+    }
+  ],
+  "rpc_methods": [
+    "mcpServerStatus/list"
+  ],
+  "mcp_servers_empty_before_turn": false,
+  "mcp_servers_empty_after_turn": false,
+  "unbounded_connection_retries_disabled": true,
+  "model_listed": true,
+  "provider_capabilities": {
+    "imageGeneration": true,
+    "webSearch": true
+  },
+  "mcp_server_inventory_before_turn": {
+    "data": [
+      {
+        "name": "compai_inherited_synthetic",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "httpOrigin": "http://127.0.0.1:56346",
+        "serverInfo": null,
+        "serverCapabilities": null,
+        "toolListMeta": null,
+        "tools": {},
+        "toolsError": null,
+        "resources": [],
+        "resourceTemplates": [],
+        "authStatus": "unsupported"
+      }
+    ],
+    "nextCursor": null
+  },
+  "guard_rejected": true,
+  "guard_error": "Unexpected inherited MCP server; question not sent",
+  "requests": [],
+  "tool_outputs": [],
+  "code_host": [],
+  "outside_fixture_unchanged": true,
+  "turn_start_calls": 0,
+  "model_requests": 0,
+  "mcp_servers_empty": false,
+  "diagnostics": [],
+  "declared_nested_tools": [],
+  "scope": "runtime_disabled_loopback_mcp_server_guard; rejected before turn/start",
+  "configured_server_observed": true,
+  "mcp_fixture_requests": [],
+  "checks": {
+    "guard_rejected": true,
+    "configured_server_observed": true,
+    "guard_checked_actual_runtime": true,
+    "no_turn_start": true,
+    "no_model_requests": true,
+    "disabled_server_not_contacted": true,
+    "outside_fixture_unchanged": true,
+    "runtime_pin_verified": true,
+    "unbounded_connection_retries_disabled": true,
+    "no_unexpected_error": true
+  },
+  "passed": true
+}

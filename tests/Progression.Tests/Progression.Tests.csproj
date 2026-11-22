@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DalamudLibPath Condition="'$(DalamudLibPath)' == ''">$(APPDATA)/XIVLauncher/addon/Hooks/dev</DalamudLibPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/ProgressionSnapshot.cs" Link="ProgressionSnapshot.cs" />
+    <Compile Include="../../CompAI/ProgressionMenuCache.cs" Link="ProgressionMenuCache.cs" />
+    <Compile Include="../../CompAI/Plugin.Progression.cs" Link="Plugin.Progression.cs" />
+    <Compile Include="../../CompAI/ProgressionAccess.cs" Link="ProgressionAccess.cs" />
+    <Compile Include="../../CompAI/ProgressionLookup.cs" Link="ProgressionLookup.cs" />
+    <Compile Include="../../CompAI/ProgressionReader.cs" Link="ProgressionReader.cs" />
+    <Compile Include="../../CompAI/BattleChocoboReader.cs" Link="BattleChocoboReader.cs" />
+    <Compile Include="../../CompAI/PvpReader.cs" Link="PvpReader.cs" />
+    <Compile Include="../../CompAI/RecentPvpCache.cs" Link="RecentPvpCache.cs" />
+    <Compile Include="../../CompAI/AchievementReader.cs" Link="AchievementReader.cs" />
+    <Compile Include="../../CompAI/GatheringLogReader.cs" Link="GatheringLogReader.cs" />
+    <Compile Include="../../CompAI/AchievementProgressReader.cs" Link="AchievementProgressReader.cs" />
+    <Compile Include="../../CompAI/FishingLogReader.cs" Link="FishingLogReader.cs" />
+    <Compile Include="../../CompAI/VariantNotebookReader.cs" Link="VariantNotebookReader.cs" />
+    <Compile Include="../../CompAI/SightseeingLogReader.cs" Link="SightseeingLogReader.cs" />
+    <Compile Include="../../CompAI/HuntingLogReader.cs" Link="HuntingLogReader.cs" />
+    <Compile Include="../../CompAI/ChallengeLogReader.cs" Link="ChallengeLogReader.cs" />
+    <Compile Include="../../CompAI/ChallengeLogDiagnostic.cs" Link="ChallengeLogDiagnostic.cs" />
+    <Reference Include="Dalamud"><HintPath>$(DalamudLibPath)/Dalamud.dll</HintPath></Reference>
+    <Reference Include="FFXIVClientStructs"><HintPath>$(DalamudLibPath)/FFXIVClientStructs.dll</HintPath></Reference>
+    <Reference Include="Lumina"><HintPath>$(DalamudLibPath)/Lumina.dll</HintPath></Reference>
+    <Reference Include="Lumina.Excel"><HintPath>$(DalamudLibPath)/Lumina.Excel.dll</HintPath></Reference>
+    <Reference Include="InteropGenerator.Runtime"><HintPath>$(DalamudLibPath)/InteropGenerator.Runtime.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DalamudLibPath Condition="'$(DalamudLibPath)' == ''">$(APPDATA)/XIVLauncher/addon/Hooks/dev</DalamudLibPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/CollectionSnapshot.cs" Link="CollectionSnapshot.cs" />
+    <Compile Include="../../CompAI/CollectionLookup.cs" Link="CollectionLookup.cs" />
+    <Compile Include="../../CompAI/CollectionReader.cs" Link="CollectionReader.cs" />
+    <Compile Include="../../CompAI/BlueMageReader.cs" Link="BlueMageReader.cs" />
+    <Compile Include="../../CompAI/MasterBestiaryReader.cs" Link="MasterBestiaryReader.cs" />
+    <Compile Include="../../CompAI/TripleTriadReader.cs" Link="TripleTriadReader.cs" />
+    <Compile Include="../../CompAI/OccultRecordReader.cs" Link="OccultRecordReader.cs" />
+    <Compile Include="../../CompAI/YokaiCollectionReader.cs" Link="YokaiCollectionReader.cs" />
+    <Compile Include="../../CompAI/CollectionToolReader.cs" Link="CollectionToolReader.cs" />
+    <Reference Include="Dalamud"><HintPath>$(DalamudLibPath)/Dalamud.dll</HintPath></Reference>
+    <Reference Include="FFXIVClientStructs"><HintPath>$(DalamudLibPath)/FFXIVClientStructs.dll</HintPath></Reference>
+    <Reference Include="Lumina"><HintPath>$(DalamudLibPath)/Lumina.dll</HintPath></Reference>
+    <Reference Include="Lumina.Excel"><HintPath>$(DalamudLibPath)/Lumina.Excel.dll</HintPath></Reference>
+    <Reference Include="InteropGenerator.Runtime"><HintPath>$(DalamudLibPath)/InteropGenerator.Runtime.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

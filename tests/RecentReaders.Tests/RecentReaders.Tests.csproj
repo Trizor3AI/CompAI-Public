@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../CompAI/RecentReaderCache.cs" Link="RecentReaderCache.cs" />
+    <Compile Include="../../CompAI/GcSupplySnapshot.cs" Link="GcSupplySnapshot.cs" />
+    <Compile Include="../../CompAI/GcSupplyLookup.cs" Link="GcSupplyLookup.cs" />
+    <Compile Include="../../CompAI/CollectionSnapshot.cs" Link="CollectionSnapshot.cs" />
+    <Compile Include="../../CompAI/CollectionLookup.cs" Link="CollectionLookup.cs" />
+  </ItemGroup>
+</Project>

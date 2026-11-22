@@ -1,0 +1,12 @@
+{
+  "version": "1.0.62",
+  "executable_sha256": "86c6c766b7961597c2a327f77e43a7b73cbc44f5cee9da6dd74ba73b45ae8b68",
+  "bytes": 172906128,
+  "source": "https://x.ai/cli/grok-1.0.62-windows-x86_64.exe",
+  "source_repository": "https://github.com/xai-org/grok-build",
+  "authenticode_signer": "X Corp.",
+  "validated_platform": "windows-x86_64",
+  "protocol": "ACP 1 and pinned x.ai extensions",
+  "containment": "Owned process tree and curated tools; no OS filesystem sandbox claim",
+  "integration_validation": "DPAPI-only login/resume, authenticated gateway removal and use_tool-only native denials verified; corrected synthetic Free tool roundtrip returned14; first failed attempt retained; native title requests/retries can occur"
+}

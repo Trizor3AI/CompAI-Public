@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "arch": "win-x64",
+  "providers": {
+    "copilot": {
+      "version": "1.0.98",
+      "format": "tar.gz",
+      "source_url": "https://registry.npmjs.org/@github/copilot-win32-x64/-/copilot-win32-x64-1.0.98.tgz",
+      "archive_bytes": 102704342,
+      "archive_sha256": "c634ab33417a65b2730a89f58db3c808aab0b58959926648b8853cd9d574ad33",
+      "archive_sha512": "5e5488c7b7a05d6e2aded6ec3cf977ed60b4231c51a637700c804b813b733d1deaca705930bfc7d7558d6a7753570e5f5405319d0fd1644df6af702df5e99740",
+      "executable": "copilot.exe",
+      "source_repository": "https://github.com/github/copilot-cli",
+      "license_note": "GitHub Copilot CLI License in the unchanged LICENSE.md. This is not the SDK's MIT license. Preserve all package notices; staging is not a public redistribution approval.",
+      "files": {
+        "copilot.exe": {"member": "package/copilot.exe", "bytes": 161431328, "sha256": "23e44448b2589401081aa90ee04201fa4b17e4e36d2ac2a10f57e5e1a317cc54", "sha512": "5b37fb456731f368dac1615c586ed9bdedcdcabbce891233442c265ef842ecaf2aff78e03d17d4e0a5e540c8d0041747b7717618f46c327d59788c866fe55698"},
+        "LICENSE.md": {"member": "package/LICENSE.md", "bytes": 2955, "sha256": "b9680937e10425bf19862908856c16ed274e6b81a1368bd62be7a757eab21628", "sha512": "df5716c21c501b7585e3f741e08003099964c539246f710e545933c958d3dca50938b6e85b4979e5ce821a188a60529a783d56c9291de419a1be4e93729c0540"},
+        "README.md": {"member": "package/README.md", "bytes": 377, "sha256": "e17c1c3ecafcf775592efcc267a3114f60b1847424a9d10c3ae6b372f4ac2c66", "sha512": "3373dcca3a57e3049cf1969387c659032a6eda57eca7dcd7b8242d3abe9b06c406076d10cae1e3e570774c1ca76c8fa5c5510249e69f5054d9faa341c8005dc3"},
+        "package.json": {"member": "package/package.json", "bytes": 663, "sha256": "749c9d0ea68f7104c3f6f66c3c071c677b63840c632343873a4dc746a73ba1af", "sha512": "df5cff2f9882e912d194d21f4a5d275608acdf6a02200994ca78c96228223d8a1ca2ef8089a5eb2ae8282f0475b547ab30539fdb0ed44f13df408136a3755b2c"}
+      }
+    },
+    "grok": {
+      "version": "1.0.62",
+      "format": "exe",
+      "source_url": "https://x.ai/cli/grok-1.0.62-windows-x86_64.exe",
+      "archive_bytes": 172906128,
+      "archive_sha256": "86c6c766b7961597c2a327f77e43a7b73cbc44f5cee9da6dd74ba73b45ae8b68",
+      "archive_sha512": "8f5d4109373fbad4710918baae56e2ffa1e920de78b820c83241704c7d69230f758336cf985693a224c0c2b691bc557813293a1ade3350b236b3c450271d0905",
+      "executable": "grok.exe",
+      "source_repository": "https://github.com/xai-org/grok-build",
+      "license_note": "The public source repository declares Apache-2.0. Its inspected revision was not the binary's revision; this metadata does not establish a matching binary license or approve public redistribution.",
+      "files": {
+        "grok.exe": {"member": null, "bytes": 172906128, "sha256": "86c6c766b7961597c2a327f77e43a7b73cbc44f5cee9da6dd74ba73b45ae8b68", "sha512": "8f5d4109373fbad4710918baae56e2ffa1e920de78b820c83241704c7d69230f758336cf985693a224c0c2b691bc557813293a1ade3350b236b3c450271d0905"}
+      }
+    }
+  }
+}

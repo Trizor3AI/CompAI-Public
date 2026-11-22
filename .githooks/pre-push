@@ -1,0 +1,6 @@
+#!/bin/sh
+# Git invokes this before uploading objects. Any check/runner failure blocks push.
+set -eu
+root=$(git rev-parse --show-toplevel) || exit 1
+cd "$root"
+exec python -I -B "$root/tools/publication_guard.py" --pre-push

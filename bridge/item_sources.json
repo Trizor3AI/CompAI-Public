@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-24",
+  "items": [
+    {
+      "item_id": 50975,
+      "name": "Phantom Dispeller β",
+      "guidance": "Dated community reference, not a live lookup: have Phantoms to Fillet active. Acquire beta dispellers through Duty Roulette: Trials, or the beta-rewarding FATEs and critical encounters in Occult Crescent: North Horn. The quest journal excludes Forked Tower content. The inventory snapshot does not reveal whether the player has unlocked or accepted this quest. Do not assume every North Horn encounter rewards beta. Yield, repeatability and daily-bonus details have not been independently verified here. This item is untradable and market prohibited.",
+      "sources": [
+        {"title": "Phantom Dispeller β — Eorzea Database (identity and trading restrictions)", "url": "https://na.finalfantasyxiv.com/lodestone/playguide/db/item/47bb4cee92e/"},
+        {"title": "Phantom Dispeller β — community acquisition reference", "url": "https://ffxiv.consolegameswiki.com/wiki/Phantom_Dispeller_%CE%B2"},
+        {"title": "Phantoms to Fillet — community transcription of quest journal", "url": "https://ffxiv.consolegameswiki.com/wiki/Phantoms_to_Fillet"}
+      ]
+    }
+  ]
+}

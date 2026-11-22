@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "checked_date": "2026-11-08",
+  "coverage": "Verified provider grant texts, compiled Codex 0.167 selected-source notices and explicitly scoped native/producer notices; exact and supplementary Grok material retained with correspondence limits. Final portable source delivery, actual package validation and hosted availability are separate; publication remains held.",
+  "providers": {
+    "codex": {
+      "version": "0.167.0",
+      "declared_project_license": "Apache-2.0",
+      "source_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a",
+      "packaged_program_image_matches_official_release": true,
+      "selected_notice_packages": 1077,
+      "preserved_notice_texts": 709,
+      "notice_archive_sha256": "5c66e61704c091b797510a713a4125cfab61a8acb92360f7646776ca644e81fd",
+      "runtime_provenance": "The proposed private package uses the exact verified official Windows x64 0.167 release assets; final package verification must enforce the matching binary/catalog pins. This is direct release-asset identity, not the historical 0.160 desktop-image comparison.",
+      "producer_declaration_only_attribution_limits": 7
+    },
+    "grok": {
+      "version": "1.0.62",
+      "declared_package_license": "Apache-2.0",
+      "declaration_source": "https://registry.npmjs.org/@xai-official%2Fgrok-win32-x64/1.0.62",
+      "packaged_program_image_matches_official_npm_package": true,
+      "supplementary_notice_commit": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+      "source_candidate_sha256": "5dd10e771f065716a8629a1afa98339b31ddd41cbc4a67836cd57fd652f34082"
+    }
+  },
+  "files": [
+    {
+      "path": "codex/LICENSE.txt",
+      "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+      "source_url": "https://github.com/openai/codex/blob/086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a/LICENSE",
+      "scope": "Upstream Codex Apache-2.0 license",
+      "inventory_root_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a"
+    },
+    {
+      "path": "codex/NOTICE.txt",
+      "sha256": "9d71575ecfd9a843fc1677b0efb08053c6ba9fd686a0de1a6f5382fd3c220915",
+      "source_url": "https://github.com/openai/codex/blob/086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a/NOTICE",
+      "scope": "Upstream Codex root notice; dependency notices are separate",
+      "inventory_root_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a"
+    },
+    {
+      "path": "grok/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "scope": "Canonical text for the Apache-2.0 declaration in the exact official npm package"
+    },
+    {
+      "path": "grok/THIRD_PARTY_NOTICES.md",
+      "sha256": "e8785a6098a7ee780cd2db35745b8e53061cfb1b6da19147a308579466ea4e50",
+      "source_url": "https://registry.npmjs.org/@xai-official/grok-win32-x64/-/grok-win32-x64-1.0.62.tgz",
+      "scope": "Unchanged release-supplied tool-crate notice; not the full-product dependency inventory"
+    },
+    {
+      "path": "codex/ATTRIBUTION-LIMITS.txt",
+      "sha256": "f881d2880007a1667cbe22073237b327c31e26b3c32b1c996613a587c85a4544",
+      "source_kind": "assembled attribution material",
+      "scope": "Self-contained installed 1,077-package / 709-text notice collection with 483 native-source notice records and a separately identified 263-package producer full-lock inventory; seven producer-only declaration-based attribution limits remain explicit.",
+      "inventory_root_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a"
+    },
+    {
+      "path": "codex/README.txt",
+      "sha256": "d77df753d1bad1f70a4a37f47bef37348e37f1167697193f73fc2bed2ed4f339",
+      "source_kind": "assembled attribution material",
+      "scope": "Self-contained installed 1,077-package / 709-text notice collection with 483 native-source notice records and a separately identified 263-package producer full-lock inventory; seven producer-only declaration-based attribution limits remain explicit.",
+      "inventory_root_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a"
+    },
+    {
+      "path": "codex/THIRD-PARTY-NOTICES.txt",
+      "sha256": "02c417d244eda3142164b8c42c247d54b4e08236abcdcea848cdcd5b1a2acd91",
+      "source_kind": "assembled attribution material",
+      "scope": "Self-contained installed 1,077-package / 709-text notice collection with 483 native-source notice records and a separately identified 263-package producer full-lock inventory; seven producer-only declaration-based attribution limits remain explicit.",
+      "inventory_root_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a"
+    },
+    {
+      "path": "grok/LICENSE-MPL-2.0.txt",
+      "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+      "source_kind": "Mozilla Public License 2.0 text",
+      "scope": "License text for the identified MPL-covered Grok dependencies.",
+      "source_url": "https://www.mozilla.org/en-US/MPL/2.0/"
+    },
+    {
+      "path": "grok/README.md",
+      "sha256": "6f4921c1db26bcf1dd65c3f82019c9510cc8177b636360cd504b1a4357b43459",
+      "source_kind": "CompAI summary of retained notice and source materials",
+      "scope": "Supplementary public upstream reference or source-availability information; see grok/README.md for correspondence limits."
+    },
+    {
+      "path": "grok/THIRD-PARTY-NOTICES.upstream-2bdd1d6.txt",
+      "sha256": "dcbdd42b8fe45aa28f67a7b9e82d9feadec2b958c050158aeaac460eba651d07",
+      "source_kind": "Unmodified pinned upstream reference notice",
+      "source_commit": "2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8",
+      "scope": "Supplementary public upstream reference or source-availability information; see grok/README.md for correspondence limits.",
+      "source_url": "https://github.com/xai-org/grok-build/blob/2bdd1d6a6369de0e8c68132ea4539e9abd9e14a8/THIRD-PARTY-NOTICES"
+    }
+  ]
+}

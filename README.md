@@ -4,6 +4,8 @@ Ever buy crafting materials and then find a whole stack on a retainer? CompAI gi
 
 **[Install CompAI for Windows](INSTALL.md)** · Beta 0.53.23 · Requires XIVLauncher with Dalamud and a supported AI account.
 
+[Visit Trizor3’s Workshop](https://trizor3.net/) · [Join Trizor3’s Hub on Discord](https://discord.gg/pDdBPHzA2B)
+
 ## Try it in game
 
 Open `/compai` to chat. Your first companion is Armo, a veteran gamer with a dry sense of humour. Prefer a neutral voice without the extra character instructions? In an open chat, select **Context → Personality** and choose **Default**. To choose who answers in new chats or create your own personality, open `/compai settings` → **Personalization**.
